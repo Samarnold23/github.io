@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arun Kumar's Portfolio</title>
+  <style>
+    /* Name animation styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+
+    .name-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3em;
+    }
+
+    .name {
+      opacity: 1;
+      transition: all 1s ease-in-out;
+    }
+
+    .hidden {
+      opacity: 0;
+    }
+
+    /* Portfolio styles */
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    h1 {
+      margin: 5px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Name Animation -->
+  <div class="name-container">
+    <div class="name" id="firstName">Arun</div>
+    <div class="name" id="lastName">Kumar</div>
+  </div>
+
+  <!-- Portfolio Content -->
+  <header>
+    <h1>Arun Kumar</h1>
+    <p>M A N U F A C T U R I N G   E N G I N E E R</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>Manufacturing engineer with over 4 years of experience...</p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>PFMEA</li>
+        <li>PPAP</li>
+        <li>Poka-Yoke</li>
+        <!-- Add more skills -->
+      </ul>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <p>Present - Oct 2021: Engineer (Manufacturing Engineering) at Stanadyne Mideast FZE...</p>
+      <!-- Add more experience details -->
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <p>2014 - 2018: B.E Production Engineering from Government College of Technology...</p>
+      <!-- Add more education details -->
+    </section>
+
+    <section id="achievements" class="section">
+      <h2>Achievements</h2>
+      <ol>
+        <li>FTQ Reduction in Assembly line from 11.6% to 3%</li>
+        <li>Cycle time reduction in Banjo A&T Machine from 100 sec to 60 sec</li>
+        <!-- Add more achievements -->
+      </ol>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        Phone: +91 8122123990 / +971 0504094879<br>
+        Email: arunmani1207@gmail.com<br>
+        Location: Sharjah, UAE<br>
+        LinkedIn: <a href="https://linkedin.com/arun-kumar-9b5415108/">linkedin.com/arun-kumar-9b5415108/</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Arun Kumar</p>
+  </footer>
+
+  <script>
+    const firstName = document.getElementById('firstName');
+    const lastName = document.getElementById('lastName');
+
+    setTimeout(() => {
+      firstName.classList.add('hidden');
+      lastName.style.transform = 'translateX(50%)';
+      lastName.classList.add('hidden');
+    }, 2000);
+
+    setTimeout(() => {
+      firstName.textContent = 'Arun Kumar';
+      firstName.classList.remove('hidden');
+      lastName.style.transform = 'translateX(0)';
+      lastName.classList.remove('hidden');
+    }, 4000);
+  </script>
+</body>
+</html>
